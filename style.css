@@ -6,3 +6,8 @@
 .random-article {
   margin-top: 10px;
 }
+
+.content {
+  width: 500px !important;
+  background-color: #ccc;
+}
