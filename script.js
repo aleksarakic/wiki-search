@@ -6,7 +6,12 @@ $(document).ready(function(){
 			$.ajax({url: url,
 				dataType: "jsonp",
 	    	success: function(response){
-	        console.log(response['query']['pages']);
+	        var obj = response['query']['pages'];
+	        for (var key in obj) {
+					  if (obj.hasOwnProperty(key)) {
+					    console.log(key);
+					  }
+					}
 	    	}
 			});
 		return false;
