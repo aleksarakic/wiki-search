@@ -9,13 +9,12 @@ $(document).ready(function(){
 				dataType: "jsonp",
 	    	success: function(response){
 	        var obj = response['query']['pages'];
-	        for (var key in obj) {
-						for(var key in obj) {
-					  	if (obj.hasOwnProperty(key)) {
-								$('.content').append("<a href='" + "http://en.wikipedia.com/?curid=" + key + "'>" + obj[key].title + "</a></br>");
-					  	}
-						}
-		    	}
+
+					for(var key in obj) {
+				  	if (obj.hasOwnProperty(key)) {
+							$('.content').append("<div class='link-div '><p class='text-center'><a class='link' href='" + "http://en.wikipedia.com/?curid=" + key + "'>" + obj[key].title + "</a></p></div></br>");
+				  	}
+					}
 	    	}
 			});
 		return false;
