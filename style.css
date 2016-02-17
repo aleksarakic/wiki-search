@@ -3,21 +3,18 @@ body {
 }
 
 .search-bar {
-  margin-top: 50px;
-  width: 200px !important;
 	padding:6px 15px 6px 30px;
-	margin:3px;
+	margin: 3px;
 	border-radius:2px; 
 	-moz-border-radius:2px; 
 	-webkit-border-radius:2px; 
 }
 
-.lighter {
-	width:95%;
-	height:50px;
-	padding:40px 25px;
-	
+form {
+	padding-left: 30%;
+	padding-top: 25px;
 }
+
 .random-article {
   margin-top: 10px;
 }
@@ -66,12 +63,6 @@ body {
 	text-decoration: none;
 	color: #ccc;
 }
-
-form{
-	width:500px;
-	margin:0 auto;
-}
-
 
 .lighter input[type=text]{
 	border:1px solid #d0d0d0;
